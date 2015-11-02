@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="cheokApp" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <body ng-app="cheokApp" id="myPage" data-spy="scroll" data-target="#my-nav" data-offset="60">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -35,11 +35,11 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">关于我们</a></li>
-              <li><a href="#services">产品中心</a></li>
-              <li><a href="#portfolio">企业动态</a></li>
-              <li><a href="#tour">人才招聘</a></li>
-              <li><a href="#contact">联系我们</a></li>
+              <li><a href="#/about">关于我们</a></li>
+              <li><a href="#/service">服务中心</a></li>
+              <li><a href="#/news">企业动态</a></li>
+              <li><a href="#/hr">人才招聘</a></li>
+              <li><a href="#/contact">联系我们</a></li>
             </ul>
           </div>
         </div>
@@ -60,29 +60,6 @@
       <p>Copyright Chezhidao © 2013 - 2015 All Rights Reserved    桂ICP备14007933号-2</p>
     </footer>
 
-    <script>
-      $(document).ready(function(){
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 900, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        });
-      })
-    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -108,6 +85,7 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

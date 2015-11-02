@@ -271,3 +271,19 @@ footer .glyphicon {
         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
 }
+
+#my-nav{
+  top:100px;
+  position: fixed;
+  right: 5%;
+  z-index: 100;
+}
+#my-nav ul, #my-nav a,#my-nav a:visited{
+  background-color: #429b97;
+  color: #fff;
+  border-left: 2px solid orange;
+}
+#my-nav a:active{
+  background-color: orange;
+  color: #429b97;
+}
