@@ -51,9 +51,9 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid #e5e5e5;
-
+  margin-bottom: 0;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -69,28 +69,7 @@ body {
   }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
 
 /*21:00 Nov.1 2015*/
 body {
@@ -119,6 +98,7 @@ h4 {
     font-family: Montserrat, sans-serif;
 }
 .jumbotron h1{
+  color:orange;
   text-shadow: 4px 3px 0px #778899, 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 .container-fluid {
@@ -208,11 +188,11 @@ h4 {
     background-color: #008B8B;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 1.42857143 !important;
     letter-spacing: 4px;
     border-radius: 0;
-    font-family: "Microsoft YaHei" ! important,Montserrat, sans-serif;
+    font-family: "Microsoft YaHei" !important, Montserrat, sans-serif;
     opacity:0.9;
 }
 .navbar li a, .navbar .navbar-brand {
@@ -274,8 +254,8 @@ footer .glyphicon {
 
 #my-nav{
   top:100px;
-  position: fixed;
-  right: 3%;
+  position: absolute;
+  right: 40px;
   z-index: 100;
 }
 #my-nav ul{
@@ -295,3 +275,27 @@ footer .glyphicon {
    background: orange;
    color: #fff;
  }
+
+
+.affix-top a{
+  display: block;
+}
+.affix img{
+  height: 48px;
+}
+.affix-top img{
+  height: 48px;
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .affix-top{
+    height: 100px;
+    background-color:#008B8B;
+  }
+  .affix-top img{
+    height: 96px;
+  }
+  .affix-top ul{
+    padding-top:50px;
+  }
+}
