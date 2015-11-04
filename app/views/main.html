@@ -31,7 +31,7 @@
     <div class="col-sm-3">
       <div class="thumbnail">
         <img src="images/wzcx.jpg" alt="Paris">
-        <p><strong>南宁违章快捷查询</strong></p>
+        <p><strong>南宁违章查询</strong></p>
         <!-- Used to open the Modal -->
         <button class="btn btn-primary" data-toggle="modal" data-target="#wzcx">立即查询</button>
         <!-- Modal -->
@@ -42,7 +42,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4><span class="glyphicon glyphicon-lock"></span> 南宁违章快捷查询通道</h4>
+                <h4><i class="fa fa-car"></i> 南宁违章快捷查询通道</h4>
               </div>
               <div class="modal-body">
                 <form role="form">
@@ -75,7 +75,51 @@
         <img src="images/txcx.jpg" alt="New York">
         <p><strong>拖车查询</strong></p>
         <!-- Used to open the Modal -->
-        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">输入查询</button>
+        <button class="btn btn-success" data-toggle="modal" data-target="#txcx">输入查询</button>
+        <!-- Modal -->
+        <div class="modal fade" id="txcx" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4><i class="fa fa-truck"></i> 南宁违停拖车查询</h4>
+              </div>
+              <div class="modal-body">
+                <form role="form">
+                  <div class="form-group">
+                    <label for="psw"><i class="fa fa-car"></i> 请选择车辆种类</label>
+                    <select class="form-control">
+                      <option>小型汽车</option>
+                      <option>大型汽车</option>
+                      <option>摩托车</option>
+                      <option>电动车</option>
+                      <option>货车</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="psw"><i class="fa fa-car"></i> 请输入车牌号</label>
+                    <input type="number" class="form-control" id="psw" placeholder="桂A ">
+                  </div>
+                  <div class="form-group">
+                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> 预留手机号若有误请往交管部门变更</label>
+                    <input type="text" class="form-control" id="usrname" placeholder="请输入交警预留手机号码验证码">
+                  </div>
+                  <button type="submit" class="btn btn-block">查询
+                    <span class="glyphicon glyphicon-ok"></span>
+                  </button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                  <span class="glyphicon glyphicon-remove"></span> 取消
+                </button>
+                <p>需要 <a href="#">帮助?</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-sm-3">
@@ -89,9 +133,9 @@
     <div class="col-sm-3">
       <div class="thumbnail">
         <img src="images/paris.jpg" alt="Paris">
-        <p><strong>汽车金融</strong></p>
+        <p><strong>金融保险</strong></p>
         <!-- Used to open the Modal -->
-        <button class="btn btn-success" data-toggle="modal" data-target="#myModal">了解更多</button>
+        <button class="btn btn-success" data-toggle="＃" data-target="#myModal">了解更多</button>
       </div>
     </div>
     <!-- Modal -->
@@ -102,16 +146,16 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+            <h4><i class="fa fa-university"></i> 违章代缴</h4>
           </div>
           <div class="modal-body">
             <form role="form">
               <div class="form-group">
-                <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-                <input type="number" class="form-control" id="psw" placeholder="How many?">
+                <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> 请输入违章代码</label>
+                <input type="number" class="form-control" id="psw" placeholder="请输入?">
               </div>
               <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                <label for="usrname"><span class="glyphicon glyphicon-user"></span> 发送</label>
                 <input type="text" class="form-control" id="usrname" placeholder="Enter email">
               </div>
               <button type="submit" class="btn btn-block">Pay
@@ -121,7 +165,7 @@
           </div>
           <div class="modal-footer">
             <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-              <span class="glyphicon glyphicon-remove"></span> Cancel
+              <span class="glyphicon glyphicon-remove"></span> 取消
             </button>
             <p>Need <a href="#">help?</a></p>
           </div>
@@ -188,7 +232,7 @@
       <div class="thumbnail">
         <img src="images/paris.jpg" alt="Paris" width="400" height="300">
         <p><strong>南宁交警支队</strong></p>
-        <p>对, 权威信息的渠道</p>
+        <p>权威信息的渠道</p>
       </div>
     </div>
     <div class="col-sm-2">
