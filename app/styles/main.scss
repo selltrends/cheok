@@ -102,7 +102,7 @@ h4 {
   text-shadow: 4px 3px 0px #778899, 9px 8px 0px rgba(0, 0, 0, 0.15);
 }
 .container-fluid {
-    padding: 60px 50px;
+    padding: 5px 50px;
 }
 .bg-grey {
     background-color: #f6f6f6;
@@ -185,7 +185,7 @@ h4 {
 }
 .navbar {
     margin-bottom: 0;
-    background-color: #008B8B;
+    background-color: #2F4F4F;
     z-index: 9999;
     border: 0;
     font-size: 14px !important;
@@ -252,6 +252,7 @@ footer .glyphicon {
     }
 }
 
+
 #my-nav{
   top:100px;
   position: absolute;
@@ -288,15 +289,17 @@ footer .glyphicon {
   padding-left: 20px;
 }
 @media (min-width: 768px) {
+  #myNavbar{
+    margin-left: 200px;
+  }
   .affix-top{
-    height: 100px;
-    background-color:#008B8B;
+    background:transparent;
   }
   .affix-top img{
     height: 96px;
   }
   .affix-top ul{
-    padding-top:50px;
+    padding-top:40px;
   }
 }
 
