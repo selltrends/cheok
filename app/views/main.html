@@ -2,10 +2,11 @@
 
 <div id="my-nav" class=" ">
   <ul class="nav nav-list affix">
-    <li><a href="#jumbotron" du-smooth-scroll du-scrollspy>M</a></li>
+    <li><a href="#business" du-smooth-scroll du-scrollspy>M</a></li>
     <li><a href="#about" du-smooth-scroll du-scrollspy>B</a></li>
-    <li><a href="#services" du-smooth-scroll du-scrollspy>D</a></li>
+    <li><a href="#review" du-smooth-scroll du-scrollspy>D</a></li>
     <li><a href="#portfolio" du-smooth-scroll du-scrollspy>R</a></li>
+    <li><a href="#info" du-smooth-scroll du-scrollspy>C</a></li>
     <li><a href="#tour" du-smooth-scroll du-scrollspy>T</a></li>
   </ul>
 </div>
@@ -13,20 +14,20 @@
 
 <div id="jumbotron" class="jumbotron text-center">
   <div class="row">
-    <div class="col-md-6" style="text-align:right;">
-      <img src="images/mobile.png" alt="" style="padding-top:40px;"/>
+    <div class="col-sm-3 col-sm-offset-3">
+      <img src="images/mobile.png" class="img-responsive" style="padding-top:50px;"/>
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-3">
       <h1>扫一扫 <i class="fa fa-cog fa-spin"></i></h1>
       <p>安装车知道APP更便捷</p>
-      <img src="images/download.png" alt="" />
+      <img src="images/download.png" alt="" class="img-responsive" />
     </div>
 
   </div>
 
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="business">
   <div class="row text-center">
     <div class="col-sm-3">
       <div class="thumbnail">
@@ -51,7 +52,7 @@
                     <input type="number" class="form-control" id="psw" placeholder="桂A ">
                   </div>
                   <div class="form-group">
-                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> 预留手机号有误请往交管部门变更</label>
+                    <label for="usrname"><span class="glyphicon glyphicon-user"></span> 预留手机号有误请往交管部门变更 <button type="button" class="btn btn-success"> 获取验证码</button></label>
                     <input type="text" class="form-control" id="usrname" placeholder="请输入交警预留手机号码验证码">
                   </div>
                   <button type="submit" class="btn btn-block">查询
@@ -177,7 +178,7 @@
 
 
 
-<div class="container-fluid bg-grey">
+<div class="container-fluid bg-grey" id="about">
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-globe logo"></span>
@@ -189,7 +190,7 @@
     </div>
   </div>
 </div>
-<div class="container-fluid text-center">
+<div class="container-fluid text-center" id="review">
   <h2><i class="fa fa-commenting-o"></i> 听听我们客户如何评价车知道</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -273,7 +274,7 @@
 </div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+<div id="info" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
       <h2><i class="fa fa-tags"></i> 集团公司介绍</h2><br>
